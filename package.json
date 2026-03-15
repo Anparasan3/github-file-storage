@@ -4,16 +4,25 @@
   "description": "Store files in GitHub repositories easily",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts",
-    "prepare": "npm run build"
+    "build": "bunx tsup src/index.ts --format esm,cjs --dts",
+    "prepare": "bun run build",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
   },
-  "keywords": ["github", "storage", "file-upload"],
+  "keywords": [
+    "github",
+    "storage",
+    "file-upload"
+  ],
   "license": "MIT",
   "author": "",
   "dependencies": {
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "tsup": "^8.5.1"

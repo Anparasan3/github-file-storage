@@ -1,6 +1,6 @@
 {
   "name": "github-file-storage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Store files in GitHub repositories easily",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
